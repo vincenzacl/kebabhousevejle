@@ -63,9 +63,7 @@
 				//document.addEventListener("online", this.onOnline, false);    			
 		    }
             function onDeviceReady() {
-            	//navigator.notification.alert('Opening website');
-           
-                var networkState = checkConnection();
+            	var networkState = checkConnection();
                 
                 /* load local files if there is not network connection */
                 if (networkState == Connection.NONE) {
@@ -74,7 +72,7 @@
                 } else {
                     // external url
                    // navigator.notification.alert('Opening website');
-                	window.open('http://m.kebabhousevejle.dk/?app=1', '_self', 'location=no');
+                	window.open('http://kebabhousevejle.dk/?app=1', '_self', 'location=no');
                     
                                        
                 }
